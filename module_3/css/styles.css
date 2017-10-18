@@ -1,0 +1,66 @@
+  #wrapper {
+      font-family: Tahoma;
+      width: 480px;
+      height: 2200px;
+      margin: auto;
+      background-color: white;
+  }
+
+  html {
+      background-image: url(https://www.astronomia-iniciacion.com/images/del-dia/12-12/ngc6188-lupa.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+  }
+
+  .article_1 {
+      margin: 40px;
+      padding-top: 40px;
+  }
+
+  .article_2 {
+      width: 300px;
+      margin-left: 40px;
+  }
+  
+  .line {
+      padding-top: 20px;
+      border-top: 2px solid lightgray;
+  }
+
+  .article_3 {
+      margin: 40px 40px 0 40px;
+  }
+
+  .article_4, .article_5 {
+      line-height: 20px;
+      color: blue;
+  }
+
+  .article_4 {
+      display: inline-block;
+      width: 160px;
+      margin-left: 80px;
+  }
+
+  .article_5 {
+      display: inline-block;
+      vertical-align: top;
+      width: 160px;
+      margin-left: 40px;
+  }
+
+  h3, h4 {
+      color: blue;
+  }
+
+  h3 {
+    text-transform: uppercase;
+  }
+  
+  img {
+      display: inline-block;
+      width: 400px;
+  }
+
+ 
