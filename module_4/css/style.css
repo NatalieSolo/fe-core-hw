@@ -1,0 +1,158 @@
+.wrapper {
+    font-family: Tahoma;
+    width: 1024px;
+    min-height: 1100px;
+    margin: auto;
+    padding: 50px;
+    background-color: white;
+}
+
+body {
+    background-image: url(../bkg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main {
+    display: inline-block;
+    width: 70%;
+}
+
+.aside {
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+    margin-left: 60px;
+}
+
+.box_1, .box_2 {
+    height: 500px;
+    padding-bottom: 50px;
+}
+
+.up {
+    border-bottom: 2px solid gray;
+}
+
+img {
+    float: left;
+    width: 400px;
+    height: 300px;
+    margin: 0 30px 20px 0;
+}
+
+.numbers {
+    list-style: none;
+    counter-reset: myCounter;
+    padding-left: 0;
+}
+
+.numbers h4, .numbers p {
+    margin-left: 35px;
+}
+   
+.numbers > li:before {
+    float: left;
+    counter-increment: myCounter;
+    content:counter(myCounter);
+    color: white;
+    background: #46AFF0;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+.box_3, .box_4 {
+    height: 350px;
+    margin-top: 60px;
+}
+
+.box_5 {
+    display: inline-block;
+    width: 270px;
+    margin-top: 30px;
+}
+
+.box_6 {
+    display: inline-block;
+    vertical-align: top;
+    width: 270px;
+    margin-top: 30px;
+}
+
+.a {
+    list-style: none;
+    line-height: 30px;
+}
+
+.a > li:before {
+    content:"\2192";
+    color: blue;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.wwo {
+    height: 80px;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+h1, h4 {
+    color: #191E4D;
+}
+
+.comment {
+    width: 250px;
+    height: 190px;
+    background: lightgray;
+    border-radius: 5px;
+}
+  
+.comment_block {
+    border-radius: 5px;
+    display: inline-block;
+    padding: 5px;
+    background: #fcfafa;
+    width:238px;
+    height: 178px;
+    margin-left: 1px;
+    margin-top: 1px;
+}
+
+.comment_block:before {
+    content: "\201C";
+} 
+
+.comment_block:after {
+    content: "\201D";
+} 
+ 
+.triangle_back {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-right: 30px solid transparent;
+    border-left: 30px solid transparent;
+    border-top: 50px solid lightgray;
+    position: relative;
+    margin-left: calc((250px - 60px) / 2);
+}
+  
+.triangle {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-right: 30px solid transparent;
+    border-left: 30px solid transparent;
+    border-top: 50px solid #fcfafa;
+    position: absolute;
+    left: -30px;
+    top: -53px;
+}
