@@ -1,0 +1,267 @@
+body {
+    background-image: url(../bkg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* ======================NAVIGATION============================ */
+
+nav {
+    position: relative;
+    font-size: 0;
+    width: 1028px;
+    height: 235px;
+    margin: auto;
+}
+
+.navigation_left, .navigation_right {
+    display: inline-block;
+    width: 500px;
+    height: 50px;
+    box-sizing: border-box;
+    line-height: 50px;
+    list-style: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 7%;
+}
+
+.navigation_left, .navigation_right {
+    padding-left: 100px;
+}
+  
+:root {--w:140px;}
+.logo {
+      position: absolute;
+      left: 40%;
+      top: 5%;
+      width: var(--w);
+      height: var(--w);
+      line-height: calc(var(--w)/3);
+      text-align: center;
+      font-family: Dorsa;
+      font-size: 40px;
+      color: #4A4A8D;
+      text-transform: uppercase;
+      margin: auto; 
+      border-radius: calc(var(--w)/2);
+      background-color: white;
+}
+  
+a {
+    display: inline-block;
+    color: white;
+    font-family: Pathway Gothic One;
+    font-size: 20px;
+    text-decoration: none;
+    height: 50px;
+}
+
+ul {
+    padding-left: 0;
+}
+
+.home, .about, .gallery, .tours, .blog, .contacts {
+    display: inline-block;
+    margin-right: 60px;
+}
+  
+.submenu {
+    display:none;
+    position: absolute;
+    left: 18%;
+    width: 40px;
+    background-color: white;
+    list-style: none;
+    padding: 5px 10px;
+    line-height: 20px;
+    border-radius: 2px;
+}
+
+.agency, .news, .team {
+    color: #292955;
+    font-size: 15px;
+    height: 20px;
+}
+  
+.about:hover > .submenu {
+    display: block;
+}
+  
+.submenu:before {
+    content: "\25B2";
+    color: white;
+    top: -12px;
+    left: 45%;
+    height: 10px;
+    position: absolute;
+    font-size: 10px;
+}
+
+a:hover {
+    color: #292955;
+}
+
+/* =============================MAIN===================================== */
+
+main {
+    position: relative;
+    width:1024px;
+    min-height: 1170px;
+    margin: auto;
+    background-color: white;
+    padding: 50px;
+}
+
+/*  При масштабировании фиксированная часть остается на своем месте относительно экрана (всего боди).
+как ее привязать к мейну? */
+
+figure {
+    display: inline-block;
+    position: fixed;
+    right: 40px;
+    bottom: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #5CA6FA;
+    text-align: center;
+}
+
+figure:before {
+    content: "\2227";
+    color: white;
+    line-height: 30px;
+}
+
+/* ==============================SLIDER======================================= */
+
+.slider {
+    font-size: 0;
+    position: absolute;
+    top: 600px;
+    left: 100px;
+}
+  
+.halfcircle_left, .halfcircle_right {
+    display: inline-block;
+    width: 50px;
+    height: 100px;
+    background-color: #5CA6FA;
+    text-decoration: none;
+    text-align: center;
+}
+  
+.halfcircle_left {
+    border-radius: 50px 0 0 50px;
+}
+  
+.halfcircle_right {
+    border-radius: 0 50px 50px 0;
+}
+  
+.halfcircle_left:before {
+    content: "\2190";
+    color: white;
+    line-height: 100px;
+    font-size: 20px;
+}
+  
+.halfcircle_right:before {
+    content: "\2192";
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    font-size: 20px;
+}
+  
+.halfcircle_left:hover, .halfcircle_right:hover {
+    background: rgba(115, 185, 250, 0.5); 
+}
+
+/* =======================TEXT_BLOCKS======================================= */
+
+.block_1 {
+    font-size: 20px;
+    font-family: Pathway Gothic One;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 60px;
+    color: #4A4A8D;
+    position: absolute;
+    top:220px;
+    display: inline-block;
+    width: 225px;
+    height: 60px;
+    margin-left: 1px;
+    background-color: white;
+}
+
+.block_2 {
+    font-size: 25px;
+    font-family: Pathway Gothic One;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 60px;
+    color: white;
+    position: absolute;
+    top:275px;
+    display: inline-block;
+    width: 275px;
+    height: 60px;
+    margin-left: 1px;
+    background-color: #5CA6FA;    
+}
+
+/* ========================DOWN_PAGE========================================= */
+
+.caption {
+    font-size: 25px;
+    font-family: Pathway Gothic One;
+    text-transform: uppercase;
+    color: #4A4A8D;
+    margin-top: 60px;
+}
+
+section {
+    position: relative;
+    height: 270px;
+    margin-top: 70px;
+}
+
+.img1, .img2, .img3 {
+    width:285px;
+    height: 270px;
+}
+
+.img2 {
+    margin: 0 70px 0 70px;
+}
+
+article {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #252575;
+    color: white;
+    width: 140px;
+    height: 250px;
+    padding: 10px;
+    font-family: Pathway Gothic One;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+/* Не хочет всплывать скрытая часть при наведении курсора */
+
+.img1:hover > .article {
+    display: block;
+}
+
+
+
+
