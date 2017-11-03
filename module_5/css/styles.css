@@ -28,13 +28,13 @@ nav {
 }
 
 .navigation_left, .navigation_right {
-    padding-left: 100px;
+    padding-left: 120px;
 }
   
 :root {--w:140px;}
 .logo {
       position: absolute;
-      left: 40%;
+      left: 43%;
       top: 5%;
       width: var(--w);
       height: var(--w);
@@ -70,7 +70,7 @@ ul {
 .submenu {
     display:none;
     position: absolute;
-    left: 18%;
+    left: 20%;
     width: 40px;
     background-color: white;
     list-style: none;
@@ -115,7 +115,7 @@ main {
 }
 
 /*  При масштабировании фиксированная часть остается на своем месте относительно экрана (всего боди).
-как ее привязать к мейну? */
+как ее привязать к мейну? Ссылка на меню? */
 
 figure {
     display: inline-block;
@@ -129,10 +129,17 @@ figure {
     text-align: center;
 }
 
-figure:before {
+.figure {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+.figure:before {
     content: "\2227";
     color: white;
-    line-height: 30px;
+    /* line-height: 15px; */
 }
 
 /* ==============================SLIDER======================================= */
@@ -226,16 +233,18 @@ figure:before {
 
 section {
     position: relative;
-    height: 270px;
     margin-top: 70px;
 }
 
-.img1, .img2, .img3 {
-    width:285px;
-    height: 270px;
+li {
+    list-style: none;
 }
 
-.img2 {
+.down_page li {
+    display: inline-block;
+}
+
+.new_york {
     margin: 0 70px 0 70px;
 }
 
@@ -252,15 +261,29 @@ article {
     font-family: Pathway Gothic One;
 }
 
+.details {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    width: 40px;
+    height: 25px;
+    border-radius: 2px;
+    margin-left: 80px;
+    text-align: center;
+    line-height: 25px;
+}
+
 h1 {
     text-transform: uppercase;
 }
 
 /* Не хочет всплывать скрытая часть при наведении курсора */
 
-.img1:hover > .article {
+.venice:hover > article {
     display: block;
 }
+
+
 
 
 

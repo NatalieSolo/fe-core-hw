@@ -51,16 +51,6 @@
         </nav>
     </header>
     <main>
-
-        <!-- что делать с имг? новый вариант не поддерживается майкрософт -->
-        
-        <!-- <img src="slider4_1024.png"  
-            srcset="large.jpg 1024w,
-                medium.jpg 640w,
-                small.jpg 320w"
-            sizes="(min-width: 36em) 33.3vw,
-                100vw"
-            alt="ship"> -->
         <img src="slider4_1024.png" alt="ship">
         <p class="block_1">there are plenty of places</p>
         <p class="block_2">that are worth seeing</p>
@@ -70,15 +60,22 @@
         </div>
         <p class="caption">top destinations</p>
         <section>
-            <img class="img1" src="venice.png" alt="venice">
-            <img class="img2" src="new_york.png" alt="new_york">
-            <img class="img3" src="paris.png" alt="paris">
-            <article>
-                <h1>venice</h1>
-                <p>At eveniet ea eaque excepturi. Tenetur ut doloremque totam quas aut, iusto molestiae mollitia saepe consequatur aperiam possimus asperiores explicabo temporibus nulla.</p>
-            </article>
+            <ul class="down_page">
+                <li class="venice">
+                    <img src="venice.png" alt="venice" width="285px" height="270px">
+                    <article>
+                        <h1>venice</h1>
+                        <p>At eveniet ea eaque excepturi. Tenetur ut doloremque totam quas aut, iusto molestiae mollitia saepe consequatur aperiam possimus asperiores explicabo temporibus nulla.</p>
+                        <p class="details">Details</p>
+                    </article>
+                </li>
+                <li class="new_york"><img src="new_york.png" alt="new_york" width="285px" height="270px"></li>
+                <li class="paris"><img src="paris.png" alt="paris" width="285px" height="270px"></li>
+            </ul>
         </section>
-        <figure></figure>
+        <figure>
+            <a class="figure" href="nav"></a>
+        </figure>
     </main>
 </body>
 </html>
