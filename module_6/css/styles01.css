@@ -1,0 +1,228 @@
+body {
+    background-image: url(../img/bkg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.wrapper {
+    width: 1020px;
+    min-height: 1200px;
+    margin: auto;
+}
+
+
+/* ======================NAVIGATION============================ */
+
+nav {
+    position: relative;
+    font-size: 0;
+    height: 200px;
+}
+
+.flex-container_1,
+.navigation_left,
+.navigation_right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.navigation_left,
+.navigation_right {
+    width: 50%;
+    height: 50px;
+    line-height: 50px;
+    list-style: none;
+    /* font-size: 16px; */
+    text-transform: uppercase;
+    margin-top: 50px;
+    padding-left: 0;
+}
+
+:root {
+    --w: 150px;
+}
+
+.logo {
+    width: var(--w);
+    height: var(--w);
+    line-height: calc(var(--w)/3);
+    text-align: center;
+    font-family: Dorsa;
+    font-size: 40px;
+    color: #4A4A8D;
+    text-transform: uppercase;
+    border-radius: calc(var(--w)/2);
+    background-color: white;
+}
+
+a {
+    color: white;
+    font-family: "Pathway Gothic One";
+    font-size: 20px;
+    text-decoration: none;
+    height: 50px;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    left: 18%;
+    width: 40px;
+    background-color: white;
+    list-style: none;
+    padding: 5px 10px;
+    line-height: 20px;
+    border-radius: 2px;
+}
+
+.agency,
+.news,
+.team {
+    color: #292955;
+    font-size: 15px;
+    height: 20px;
+}
+
+.about:hover>.submenu {
+    display: block;
+}
+
+.submenu:before {
+    content: "\25B2";
+    color: white;
+    top: -12px;
+    left: 45%;
+    height: 10px;
+    position: absolute;
+    font-size: 10px;
+}
+
+nav>ul>li>a:hover {
+    color: #292955;
+}
+
+
+/* =====================MAIN============================ */
+
+main {
+    width: 900px;
+    height: 900px;
+    padding: 60px;
+    background-color: white;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 278px;
+    height: 200px;
+    margin-top: 40px;
+}
+
+.caption {
+    font-family: Pathway Gothic One;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #16163F;
+}
+
+
+/* ================FIXED_FIGURE==================== */
+
+figure {
+    display: inline-block;
+    position: fixed;
+    right: 90px;
+    bottom: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #5CA6FA;
+    text-align: center;
+}
+
+.figure {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+.figure:before {
+    content: "\2227";
+    color: white;
+}
+
+
+/* ==================FOOTER===================== */
+
+footer {
+    height: 100px;
+    background-color: #16163F;
+    padding: 40px 100px 40px 100px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100px;
+    color: white;
+    list-style: none;
+}
+
+.col_1,
+.col_2,
+.col_3,
+.col_4 {
+    width: 25%;
+    height: 50px;
+}
+
+.footer>li>a {
+    text-transform: uppercase;
+}
+
+
+/* ====================ICONS=========================== */
+
+.menu {
+    overflow: hidden;
+    margin-left: 38%;
+}
+
+.menu li {
+    float: left;
+    list-style: none;
+    margin-right: 12px;
+}
+
+.menu a {
+    display: block;
+    width: 38px;
+    height: 38px;
+    background: url(../img/sprite.png) 0 0 no-repeat;
+}
+
+.menu .facebook {
+    background-position: -40px 0;
+}
+
+.menu .google {
+    background-position: -80px 0;
+}
+
+.menu .instagram {
+    background-position: -120px 0;
+}
+
+.menu a:hover {
+    filter: grayscale(100%)
+}
