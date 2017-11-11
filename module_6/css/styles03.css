@@ -112,12 +112,15 @@ nav {
 /* =====================MAIN============================ */
 
 main {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     height: 1000px;
     padding: 60px;
     background-color: white;
+}
+
+.main_up,
+.main_down {
+    display: flex;
+    flex-direction: row;
 }
 
 .main_left {
@@ -127,6 +130,11 @@ main {
 
 .main_right {
     width: 25%;
+}
+
+.main_up,
+.main_down {
+    height: 550px;
 }
 
 .main_right>h1,
