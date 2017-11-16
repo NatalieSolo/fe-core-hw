@@ -1,0 +1,336 @@
+body {
+    background-image: url(../image/bkg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.wrapper {
+    width: 1024px;
+    min-height: 1200px;
+    margin: auto;
+}
+
+
+/* ======================NAVIGATION============================ */
+
+nav {
+    position: relative;
+    width: 824px;
+    height: 140px;
+    margin: auto;
+    text-transform: uppercase;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 50px;
+    line-height: 50px;
+    list-style: none;
+    margin-top: 90px;
+    padding-left: 0;
+}
+
+.gallery {
+    margin-right: 120px;
+}
+
+:root {
+    --w: 140px;
+}
+
+.logo {
+    position: absolute;
+    top: -40px;
+    left: 43%;
+    width: var(--w);
+    height: var(--w);
+    line-height: calc(var(--w)/3);
+    text-align: center;
+    font-family: Dorsa;
+    font-size: 40px;
+    font-weight: normal;
+    color: #4A4A8D;
+    border-radius: calc(var(--w)/2);
+    background-color: white;
+}
+
+.navigation>li>a {
+    color: white;
+    font-family: "Pathway Gothic One";
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.link {
+    display: block;
+    width: 40px;
+    height: 50px;
+    padding: 0 10px 0 10px;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    left: 18, 5%;
+    width: 40px;
+    background-color: white;
+    list-style: none;
+    text-align: center;
+    padding: 5px 10px;
+    line-height: 20px;
+    border-radius: 2px;
+}
+
+.agency,
+.news,
+.team {
+    color: #292955;
+    font-size: 15px;
+    height: 20px;
+    text-decoration: none;
+    font-family: "Pathway Gothic One";
+}
+
+.about:hover>.submenu {
+    display: block;
+}
+
+.submenu:before {
+    content: "\25B2";
+    color: white;
+    top: -12px;
+    left: 42%;
+    height: 10px;
+    position: absolute;
+    font-size: 10px;
+}
+
+.navigation>li>a:hover {
+    color: #292955;
+}
+
+
+/* =====================MAIN============================ */
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 518px;
+    padding: 100px 60px;
+    background-color: white;
+}
+
+.map>h1,
+.form>h1 {
+    text-transform: uppercase;
+    font-family: "Pathway Gothic One";
+    color: #292955;
+    font-size: 32px;
+    margin: 0 0 50px 0;
+}
+
+
+/* ====================TABLE====================== */
+
+.table {
+    width: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    margin-top: 85px;
+}
+
+.left_column {
+    width: 95px;
+}
+
+caption {
+    width: 135px;
+    font-size: 14px;
+}
+
+.caption_1 {
+    margin-bottom: 25px;
+}
+
+tr,
+th,
+td,
+caption {
+    text-align: left;
+    font-weight: 100;
+    padding: 0;
+}
+
+caption {
+    padding: 5px 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.pink {
+    color: #E53935;
+}
+
+.first_table {
+    margin-bottom: 50px;
+}
+
+
+/* ================CONTACT US================== */
+
+.form {
+    width: 210px;
+}
+
+input,
+textarea {
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #263555;
+    font-size: 13px;
+    width: 205px;
+    height: 22px;
+    margin-bottom: 18px;
+}
+
+textarea {
+    width: 203px;
+    height: 230px;
+}
+
+.keys {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 175px;
+    margin-left: 35px;
+}
+
+input[type="reset"],
+input[type="submit"] {
+    width: 78px;
+    height: 28px;
+    margin-bottom: 0;
+    border-radius: 5px;
+    border: 1px solid #b1aaaa;
+    text-transform: none;
+    font-size: 15px;
+    color: black;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: white;
+}
+
+
+/* ================FIXED_FIGURE==================== */
+
+figure {
+    display: inline-block;
+    position: fixed;
+    right: 90px;
+    bottom: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #5CA6FA;
+    text-align: center;
+}
+
+.figure {
+    display: inline-block;
+    text-decoration: none;
+    line-height: 25px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+.figure:before {
+    content: "\2227";
+    color: white;
+}
+
+
+/* ==================FOOTER===================== */
+
+footer {
+    height: 50px;
+    background-color: #16163F;
+    padding: 45px 140px 48px 140px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 58px;
+    margin: 0;
+    color: white;
+    list-style: none;
+}
+
+.col_1,
+.col_2,
+.col_3,
+.col_4 {
+    width: 25%;
+    height: 29px;
+}
+
+.footer>li>a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-family: "Pathway Gothic One";
+}
+
+.footer>li>p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+
+/* ====================ICONS=========================== */
+
+.menu {
+    overflow: hidden;
+    margin-left: 38%;
+}
+
+.menu li {
+    float: left;
+    list-style: none;
+    margin-right: 12px;
+}
+
+.menu a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../image/sprite.png) 0 0 no-repeat;
+}
+
+.menu .facebook {
+    background-position: -40px 0;
+}
+
+.menu .google {
+    background-position: -80px 0;
+}
+
+.menu .instagram {
+    background-position: -120px 0;
+}
+
+.menu a:hover {
+    filter: grayscale(100%)
+}

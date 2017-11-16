@@ -1,0 +1,607 @@
+body {
+    background-image: url(../image/bkg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.wrapper {
+    width: 1024px;
+    min-height: 1610px;
+    margin: auto;
+}
+
+
+/* ======================NAVIGATION============================ */
+
+nav {
+    position: relative;
+    width: 824px;
+    height: 140px;
+    margin: auto;
+    text-transform: uppercase;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 50px;
+    line-height: 50px;
+    list-style: none;
+    margin-top: 90px;
+    padding-left: 0;
+}
+
+.gallery {
+    margin-right: 120px;
+}
+
+:root {
+    --w: 140px;
+}
+
+.logo {
+    position: absolute;
+    top: -40px;
+    left: 43%;
+    width: var(--w);
+    height: var(--w);
+    line-height: calc(var(--w)/3);
+    text-align: center;
+    font-family: Dorsa, sans-serif;
+    font-size: 40px;
+    font-weight: normal;
+    color: #4A4A8D;
+    border-radius: calc(var(--w)/2);
+    background-color: white;
+}
+
+.navigation>li>a {
+    color: white;
+    font-family: "Pathway Gothic One", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.link {
+    display: block;
+    width: 40px;
+    height: 50px;
+    padding: 0 10px 0 10px;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    left: 18, 5%;
+    width: 40px;
+    background-color: white;
+    list-style: none;
+    text-align: center;
+    padding: 5px 10px;
+    line-height: 20px;
+    border-radius: 2px;
+}
+
+.agency,
+.news,
+.team {
+    color: #292955;
+    font-size: 15px;
+    height: 20px;
+    text-decoration: none;
+    font-family: "Pathway Gothic One", sans-serif;
+}
+
+.about:hover>.submenu {
+    display: block;
+}
+
+.submenu:before {
+    content: "\25B2";
+    color: white;
+    top: -12px;
+    left: 42%;
+    height: 10px;
+    position: absolute;
+    font-size: 10px;
+}
+
+.navigation>li>a:hover {
+    color: #292955;
+}
+
+
+/* =====================MAIN============================ */
+
+main {
+    height: 1492px;
+    padding: 58px 60px 90px 60px;
+    background-color: white;
+}
+
+
+/* ==============================SLIDER======================================= */
+
+.img_slider,
+.first_section {
+    width: 904px;
+    height: 580px;
+}
+
+.first_section {
+    position: relative;
+}
+
+.slider {
+    font-size: 0;
+    position: absolute;
+    top: 450px;
+    left: 35px;
+}
+
+.halfcircle_left,
+.halfcircle_right {
+    display: inline-block;
+    width: 45px;
+    height: 90px;
+    background-color: #5CA6FA;
+    text-decoration: none;
+    text-align: center;
+}
+
+.halfcircle_left {
+    border-radius: 45px 0 0 45px;
+}
+
+.halfcircle_right {
+    border-radius: 0 45px 45px 0;
+}
+
+.halfcircle_left:before {
+    content: "\2190";
+    color: white;
+    line-height: 90px;
+    font-size: 20px;
+}
+
+.halfcircle_right:before {
+    content: "\2192";
+    color: white;
+    text-align: center;
+    line-height: 90px;
+    font-size: 20px;
+}
+
+.halfcircle_left:hover,
+.halfcircle_right:hover {
+    background: rgba(115, 185, 250, 0.5);
+}
+
+
+/* =======================TEXT_BLOCKS======================================= */
+
+.block_1 {
+    font-size: 20px;
+    font-family: "Pathway Gothic One", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 60px;
+    color: #4A4A8D;
+    position: absolute;
+    top: 220px;
+    display: inline-block;
+    width: 225px;
+    height: 60px;
+    background-color: white;
+}
+
+.block_2 {
+    font-size: 25px;
+    font-family: "Pathway Gothic One", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 60px;
+    color: white;
+    position: absolute;
+    top: 275px;
+    display: inline-block;
+    width: 275px;
+    height: 60px;
+    background-color: #5CA6FA;
+}
+
+
+/* ========================DOWN_PAGE========================================= */
+
+.caption {
+    font-size: 30px;
+    font-family: "Pathway Gothic One", sans-serif;
+    text-transform: uppercase;
+    color: #4A4A8D;
+    margin: 55px 0 45px 0;
+}
+
+section {
+    position: relative;
+    width: 904px;
+    height: 268px;
+}
+
+li {
+    list-style: none;
+}
+
+.second_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0;
+}
+
+.article_1,
+.article_2,
+.article_3 {
+    display: none;
+    background-color: #252575;
+    color: white;
+    width: 127px;
+    height: 250px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10.5px;
+}
+
+.article_1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.article_2 {
+    position: absolute;
+    top: 0;
+    left: 308px;
+}
+
+.article_3 {
+    position: absolute;
+    top: 0;
+    left: 618px;
+}
+
+.article_1 p,
+.article_2 p,
+.article_3 p {
+    height: 130px;
+}
+
+.details,
+.details_down {
+    display: block;
+    background-color: white;
+    color: black;
+    width: 60px;
+    height: 22px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.details {
+    margin: 30px 0 0 70px;
+}
+
+.details:hover,
+.details_down:hover {
+    background-color: lightgray;
+}
+
+.article_1 h1,
+.article_2 h1,
+.article_3 h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin: 10px 0 20px 0;
+}
+
+.venice:hover>article,
+.new_york:hover>article,
+.paris:hover>article {
+    transition-property: display;
+    transition-duration: 3s;
+    display: block;
+}
+
+.third_section {
+    display: flex;
+    flex-direction: row;
+    width: 904px;
+    height: 430px;
+    margin-top: 55px;
+}
+
+
+/* ====================TAB_LEFT==================== */
+
+.tab_left {
+    border-collapse: collapse;
+    width: 595px;
+    height: 422px;
+}
+
+.captions {
+    display: flex;
+    flex-direction: row;
+    width: 375px;
+    height: 30px;
+}
+
+.th_1,
+.th_2,
+.th_3 {
+    width: 125px;
+    height: 30px;
+    padding: 0;
+    line-height: 30px;
+    font-size: 20px;
+    font-family: "Pathway Gothic One", sans-serif;
+    text-transform: uppercase;
+}
+
+.last_minute,
+.hot_deals,
+.all_inclusive {
+    color: #4A4A8D;
+    text-decoration: none;
+}
+
+.th_1 {
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    background-color: white;
+}
+
+.th_2,
+.th_3 {
+    border: 1px solid gray;
+}
+
+#tab1,
+#tab2,
+#tab3 {
+    display: flex;
+    flex-direction: column;
+    width: 560px;
+    height: 312px;
+    padding: 40px 20px 40px 15px;
+    border: 1px solid gray;
+}
+
+#tab2,
+#tab3 {
+    display: none;
+}
+
+#tab1>td,
+#tab2>td,
+#tab3>td {
+    display: flex;
+    flex-direction: row;
+    width: 560px;
+    height: 150px;
+}
+
+#tab1>td>img,
+#tab2>td>img,
+#tab3>td>img {
+    width: 198px;
+    height: 105px;
+    margin-right: 18px;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #4A4A8D;
+    margin: 0 0 20px 0;
+}
+
+.click_here {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.pink_link {
+    color: #fa7e7e;
+    text-decoration: none;
+}
+
+.black_link {
+    color: black;
+    text-decoration: none;
+}
+
+.gray {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: gray;
+}
+
+.details_down {
+    margin: 18px 0 0 273px;
+}
+
+
+/* =================TAB_RIGHT====================== */
+
+.tab_right {
+    border-collapse: collapse;
+    width: 287px;
+    height: 422px;
+    margin-left: 20px;
+}
+
+.th_4 {
+    width: 287px;
+    height: 30px;
+    border: 1px solid gray;
+    padding: 0;
+    line-height: 30px;
+    font-size: 20px;
+    font-family: "Pathway Gothic One", sans-serif;
+    text-transform: uppercase;
+    color: #4A4A8D;
+}
+
+.tab4 {
+    display: flex;
+    flex-direction: column;
+    width: 257px;
+    height: 310px;
+    padding: 40px 15px;
+    border: 1px solid gray;
+}
+
+input {
+    width: 247px;
+    height: 25px;
+    border-radius: 5px;
+    margin: 20px 0 30px 0;
+}
+
+.tab4 td ul {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.tab4>td>ul>li:before {
+    content: ">";
+    color: white;
+    background: #2980B9;
+    display: inline-block;
+    text-align: center;
+    margin: 8px 10px;
+    line-height: 12px;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+}
+
+
+/* ================FIXED_FIGURE==================== */
+
+figure {
+    display: inline-block;
+    position: fixed;
+    right: 90px;
+    bottom: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #5CA6FA;
+    text-align: center;
+}
+
+.figure {
+    display: inline-block;
+    text-decoration: none;
+    line-height: 25px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+.figure:before {
+    content: "\2227";
+    color: white;
+}
+
+
+/* ==================FOOTER===================== */
+
+footer {
+    height: 50px;
+    background-color: #16163F;
+    padding: 45px 140px 48px 140px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 58px;
+    margin: 0;
+    color: white;
+    list-style: none;
+}
+
+.col_1,
+.col_2,
+.col_3,
+.col_4 {
+    width: 25%;
+    height: 29px;
+}
+
+.footer>li>a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-family: "Pathway Gothic One", sans-serif;
+}
+
+.footer>li>p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+
+/* ====================ICONS=========================== */
+
+.menu {
+    overflow: hidden;
+    margin-left: 38%;
+}
+
+.menu li {
+    float: left;
+    list-style: none;
+    margin-right: 12px;
+}
+
+.menu a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../image/sprite.png) 0 0 no-repeat;
+}
+
+.menu .facebook {
+    background-position: -40px 0;
+}
+
+.menu .google {
+    background-position: -80px 0;
+}
+
+.menu .instagram {
+    background-position: -120px 0;
+}
+
+.menu a:hover {
+    filter: grayscale(100%)
+}
