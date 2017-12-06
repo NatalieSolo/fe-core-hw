@@ -1,0 +1,459 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../img/bkg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.wrapper {
+    max-width: 480px;
+    min-height: 1700px;
+    margin: auto;
+}
+
+/* ======================NAVIGATION============================ */
+
+nav {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    text-transform: uppercase;
+}
+
+:root {
+    --w: 80px;
+}
+
+.logo {
+    position: absolute;
+    top:-108px;
+    left: 43%;
+    width: var(--w);
+    height: var(--w);
+    line-height: var(--w);
+    text-align: center;
+    font-family: Dorsa, sans-serif;
+    font-size: 24px;
+    color: #4A4A8D;
+    border-radius: calc(var(--w)/2);
+    background-color: white;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 45%;
+    height: 50px;
+    list-style: none;
+    margin: 130px auto;
+}
+
+.navigation>li>a {
+    color: white;
+    font-family: "Pathway Gothic One", sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.home_link, 
+.about_link,
+.gallery_link,
+.tours_link,
+.blog_link,
+.contacts_link {
+    display: block;
+    width: 100%;
+    height: 25px;
+}
+
+.home,
+.about,
+.gallery,
+.tours,
+.blog,
+.contacts {
+    width: 25%;
+    height: 25px;
+    text-align: center;
+}
+
+.home {
+    margin-left: 1px;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    left: 46%;
+    width: 6.875%;
+    background-color: lightgray;
+    list-style: none;
+    text-align: center;
+    padding: 0 6px 8px 6px;
+    line-height: 20px;
+    border-radius: 2px;
+}
+
+.agency,
+.news,
+.team {
+    color: #292955;
+    font-size: 11px;
+    height: 14px;
+    text-decoration: none;
+    font-family: "Pathway Gothic One", sans-serif;
+}
+
+.about:hover>.submenu {
+    display: block;
+}
+
+.submenu:before {
+    content: "\25B2";
+    color: lightgray;
+    top: -12px;
+    left: 40%;
+    height: 10px;
+    position: absolute;
+    font-size: 10px;
+}
+
+.navigation>li>a:hover {
+    color: #292955;
+}
+
+/* =====================MAIN============================ */
+
+main {
+    width: 83.33%;
+    min-height: 1600px;
+    margin-top: 60px;
+    padding: 60px 40px 75px 40px;
+    background-color: white;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 399px;
+    height: 217px;
+    margin-top: 40px;
+}
+
+.img7,
+.img8,
+.img9 {
+    display: none;
+}
+
+.caption {
+    font-family: Pathway Gothic One;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #16163F;
+}
+
+/* ================FIXED_FIGURE==================== */
+
+figure {
+    display: inline-block;
+    position: fixed;
+    right: 8px;
+    bottom: 20px;
+    width: 26px;
+    height: 26px;
+    border-radius: 13px;
+    background-color: #5CA6FA;
+    text-align: center;
+}
+
+.figure {
+    display: inline-block;
+    text-decoration: none;
+    line-height: 21px;
+    width: 26px;
+    height: 26px;
+    border-radius: 15px;
+}
+
+.figure:before {
+    content: "\2227";
+    color: white;
+}
+
+/* ==================FOOTER===================== */
+
+footer {
+    height: 80px;
+    background-color: #16163F;
+    padding: 22px 75px 38px 105px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 36px;
+    font-size: 13px;
+    list-style: none;
+}
+
+.footer>li>a,
+.contact_us_link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: "Pathway Gothic One", sans-serif;
+    font-size: 13px;
+}
+
+.col_1,
+.col_2,
+.col_3 {
+    width: 25%;
+    height: 18px;
+}
+
+.contact_us {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 20px;
+    margin-top: 20px;
+}
+
+.contact_us>p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: white;
+}
+
+/* ====================ICONS=========================== */
+
+.menu {
+    overflow: hidden;
+    margin: 10px 0 0 30%;
+}
+
+.menu li {
+    float: left;
+    list-style: none;
+    margin-right: 12px;
+}
+
+.menu a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../img/sprite.png) 0 0 no-repeat;
+}
+
+.menu .facebook {
+    background-position: -40px 0;
+}
+
+.menu .google {
+    background-position: -80px 0;
+}
+
+.menu .instagram {
+    background-position: -120px 0;
+}
+
+.menu a:hover {
+    filter: grayscale(100%)
+}
+
+/* ======================MEDIA768======================== */
+
+@media screen and (min-width: 480px) {
+    .wrapper {
+        max-width: 768px;
+    }
+    nav {
+        height: 64px;
+    }
+    :root {
+        --w: 100px;
+    }
+    .logo {
+        top:-125px;
+        font-size: 32px;
+    }
+    .navigation {
+        width: 45%;
+        height: 64px;
+        margin: 145px auto 0 auto;
+    }
+    .navigation>li>a {
+        font-size: 20px;
+    }
+    .home_link, 
+    .about_link,
+    .gallery_link,
+    .tours_link,
+    .blog_link,
+    .contacts_link,
+    .home,
+    .about,
+    .gallery,
+    .tours,
+    .blog,
+    .contacts {
+        height: 32px;
+    }
+    .submenu {
+        width: 5.729%;
+        padding: 11px 8px;
+    }
+    .agency,
+    .news,
+    .team {
+        font-size: 13px;
+        height: 16px;
+    }
+    main {
+        width: 88.28125%;
+        min-height: 918px;
+        margin-top: 20px;
+        padding: 85px 45px;
+    }
+    img {
+        width: 330px;
+        height: 178px;
+    }
+    .img7,
+    .img8 {
+        display: block;
+    }
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 60px;
+        padding: 40px 80px 35px 46px;
+    }
+    .footer {
+        height: 40px;
+        width: 66.927%;
+    }
+    .col_1,
+    .col_2,
+    .col_3 {
+        height: 20px;
+        margin-right: 90px;
+    }
+    .contact_us {
+        flex-direction: column;
+        height: 60px;
+        margin-top: 0;
+    }
+    .contact_us>p {
+        font-size: 12px;
+    }
+    .menu {
+        margin: 10px 0 0 35%;
+    }
+}
+
+/* ======================MEDIA1024======================== */
+
+@media screen and (min-width: 768px) {
+    .wrapper {
+        max-width: 1024px;
+    }
+    nav {
+        height: 40px;
+    }
+    :root {
+        --w: 142px;
+    }
+    .logo {
+        top: -71px;
+        font-size: 44px;
+    }
+    .navigation {
+        width: 80.859%;
+        height: 40px;
+        margin: 100px auto 0 auto;
+    }
+    .navigation>li>a {
+        font-size: 24px;
+    }
+    .home_link, 
+    .about_link,
+    .gallery_link,
+    .tours_link,
+    .blog_link,
+    .contacts_link,
+    .home,
+    .about,
+    .gallery,
+    .tours,
+    .blog,
+    .contacts {
+        height: 40px;
+    }
+    .home,
+    .about,
+    .gallery,
+    .tours,
+    .blog,
+    .contacts {
+        width: 10.87%;
+    }
+    .gallery {
+        margin-right: 120px;
+    }
+    .submenu {
+        left: 23%;
+        width: 6.16%;
+        padding: 11px 8px;
+        background-color: white;
+    }
+    .agency,
+    .news,
+    .team {
+        font-size: 16px;
+        height: 20px;
+    }
+    .submenu:before {
+        color: white;
+        left: 43%;
+    }
+    main {
+        width: 88.28125%;
+        min-height: 615px;
+        margin-top: 110px;
+        padding: 96px 60px 139px 60px;
+    }
+    img {
+        width: 288px;
+        height: 154px;
+        margin-top: 50px;
+    }
+    .img9 {
+        display: block;
+    }
+    .caption {
+        font-size: 24px;
+    }
+    footer {
+        padding: 43px 188px 30px 140px;
+    }
+    .menu {
+        margin: 10px 0 0 40%;
+    }
+}
