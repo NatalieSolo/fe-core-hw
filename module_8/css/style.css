@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -11,8 +12,8 @@ body {
 }
 
 .wrapper {
-    max-width: 480px;
-    min-height: 1700px;
+    min-width: 320px;
+    max-width: 1024px;
     margin: auto;
 }
 
@@ -20,8 +21,6 @@ body {
 
 nav {
     position: relative;
-    width: 100%;
-    height: 50px;
     text-transform: uppercase;
 }
 
@@ -37,8 +36,9 @@ nav {
     height: var(--w);
     line-height: var(--w);
     text-align: center;
-    font-family: Dorsa, sans-serif;
+    font-family: "Dorsa", sans-serif;
     font-size: 24px;
+    text-transform: uppercase;
     color: #4A4A8D;
     border-radius: calc(var(--w)/2);
     background-color: white;
@@ -48,17 +48,17 @@ nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    width: 45%;
-    height: 50px;
+    justify-content: space-between;
+    padding-right: 25.17%;
+    padding-left: 29.17%;
     list-style: none;
-    margin: 130px auto;
+    margin-top: 130px;
 }
 
 .navigation>li>a {
     color: white;
     font-family: "Pathway Gothic One", sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     text-decoration: none;
 }
 
@@ -79,9 +79,8 @@ nav {
 .tours,
 .blog,
 .contacts {
-    width: 25%;
+    width: 30%;
     height: 25px;
-    text-align: center;
 }
 
 .home {
@@ -91,12 +90,12 @@ nav {
 .submenu {
     display: none;
     position: absolute;
-    left: 46%;
-    width: 6.875%;
-    background-color: lightgray;
+    left: 45%;
+    z-index: 1;
+    background-color:  #f2f2f3;
     list-style: none;
     text-align: center;
-    padding: 0 6px 8px 6px;
+    padding: 8px;
     line-height: 20px;
     border-radius: 2px;
 }
@@ -104,9 +103,9 @@ nav {
 .agency,
 .news,
 .team {
-    color: #292955;
-    font-size: 11px;
-    height: 14px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #6b7488;
     text-decoration: none;
     font-family: "Pathway Gothic One", sans-serif;
 }
@@ -117,7 +116,7 @@ nav {
 
 .submenu:before {
     content: "\25B2";
-    color: lightgray;
+    color:  #f2f2f3;
     top: -12px;
     left: 40%;
     height: 10px;
@@ -132,35 +131,35 @@ nav {
 /* =====================MAIN============================ */
 
 main {
-    width: 83.33%;
-    min-height: 1600px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 100%;
     margin-top: 60px;
-    padding: 60px 40px 75px 40px;
+    padding: 3.5rem 2.28125rem 4.6875rem;
     background-color: white;
 }
 
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-img {
-    width: 399px;
-    height: 217px;
+.image {
+    width: 100%;
     margin-top: 40px;
 }
 
-.img7,
-.img8,
-.img9 {
+img {
+    width: 100%;
+    height: auto;
+}
+
+.w768,
+.w1024 {
     display: none;
 }
 
 .caption {
-    font-family: Pathway Gothic One;
-    font-size: 22px;
+    width: 100%;
+    font-family:"Pathway Gothic One", sans-serif;
+    font-size: 28px;
+    font-weight: normal;
     text-transform: uppercase;
     color: #16163F;
 }
@@ -196,41 +195,32 @@ figure {
 /* ==================FOOTER===================== */
 
 footer {
-    height: 80px;
     background-color: #16163F;
-    padding: 22px 75px 38px 105px;
+    width: 100%;
+    padding: 1.375rem 0 2.375rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .footer {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 36px;
     font-size: 13px;
     list-style: none;
 }
 
-.footer>li>a,
+footer>ul>li>a,
 .contact_us_link {
     text-decoration: none;
     text-transform: uppercase;
     color: white;
-    font-family: "Pathway Gothic One", sans-serif;
+    font-family: "Open Sans Condensed", sans-serif;
     font-size: 13px;
-}
-
-.col_1,
-.col_2,
-.col_3 {
-    width: 25%;
-    height: 18px;
 }
 
 .contact_us {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 20px;
+    justify-content: space-evenly;
+    flex-basis: 100%;
     margin-top: 20px;
 }
 
@@ -242,15 +232,25 @@ footer {
 
 /* ====================ICONS=========================== */
 
+.down {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
 .menu {
-    overflow: hidden;
-    margin: 10px 0 0 30%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    list-style: none;
 }
 
 .menu li {
     float: left;
     list-style: none;
     margin-right: 12px;
+    transform: scale(0.65);
 }
 
 .menu a {
@@ -276,15 +276,40 @@ footer {
     filter: grayscale(100%)
 }
 
+.copyright {
+    display: flex;
+    list-style: none;
+}
+
+.copyright li, .copyright a {
+  font-family: "Arial", sans-serif;
+  font-size: 9px;
+  line-height: 18px;
+  color: white;
+}
+
+.copyright a {
+  text-decoration: none;
+}
+
+.copyright a:hover {
+  color: #263555;
+  transition:0.5s;
+}
+
+.copyright li {
+  padding-right: 2px;
+  padding-left: 2px;
+  border-left: 1px solid #ffffff;
+}
+
+.copyright li:first-of-type {
+  border-left: none;
+}
+
 /* ======================MEDIA768======================== */
 
-@media screen and (min-width: 480px) {
-    .wrapper {
-        max-width: 768px;
-    }
-    nav {
-        height: 64px;
-    }
+@media screen and (min-width: 768px) {
     :root {
         --w: 100px;
     }
@@ -293,12 +318,10 @@ footer {
         font-size: 32px;
     }
     .navigation {
-        width: 45%;
-        height: 64px;
         margin: 145px auto 0 auto;
     }
     .navigation>li>a {
-        font-size: 20px;
+        font-size: 24px;
     }
     .home_link, 
     .about_link,
@@ -315,68 +338,52 @@ footer {
         height: 32px;
     }
     .submenu {
-        width: 5.729%;
+        width: 60px;
         padding: 11px 8px;
     }
     .agency,
     .news,
     .team {
-        font-size: 13px;
-        height: 16px;
+        font-size: 17px;
+        line-height: 26px;
     }
     main {
-        width: 88.28125%;
-        min-height: 918px;
         margin-top: 20px;
         padding: 85px 45px;
     }
-    img {
-        width: 330px;
-        height: 178px;
-    }
-    .img7,
-    .img8 {
+    .w768 {
         display: block;
     }
+
+    .w768, .w480 {
+        width: 48.96%;
+    }
     footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        height: 60px;
-        padding: 40px 80px 35px 46px;
+        padding-top: 1.25rem;
+        padding-bottom: 1.75rem;
     }
-    .footer {
-        height: 40px;
-        width: 66.927%;
-    }
-    .col_1,
-    .col_2,
-    .col_3 {
-        height: 20px;
-        margin-right: 90px;
+    .footer>li>a {
+        font-size: 16px;
     }
     .contact_us {
         flex-direction: column;
-        height: 60px;
         margin-top: 0;
+        flex-basis: 25%;
     }
     .contact_us>p {
         font-size: 12px;
     }
-    .menu {
-        margin: 10px 0 0 35%;
+    .menu li {
+        transform: scale(1);
+    }
+    .copyright li, .copyright a {
+        font-size: 12px;
     }
 }
 
 /* ======================MEDIA1024======================== */
 
-@media screen and (min-width: 768px) {
-    .wrapper {
-        max-width: 1024px;
-    }
-    nav {
-        height: 40px;
-    }
+@media screen and (min-width: 1024px) {
     :root {
         --w: 142px;
     }
@@ -385,12 +392,12 @@ footer {
         font-size: 44px;
     }
     .navigation {
-        width: 80.859%;
-        height: 40px;
-        margin: 100px auto 0 auto;
+        margin-top: 100px;
+        padding-left: 9.375%;
+        padding-right: 9.082%; 
     }
     .navigation>li>a {
-        font-size: 24px;
+        font-size: 28px;
     }
     .home_link, 
     .about_link,
@@ -418,42 +425,30 @@ footer {
         margin-right: 120px;
     }
     .submenu {
-        left: 23%;
-        width: 6.16%;
-        padding: 11px 8px;
+        left: 21%;
+        width:70px;
         background-color: white;
     }
     .agency,
     .news,
     .team {
-        font-size: 16px;
-        height: 20px;
+        font-size: 20px;
     }
     .submenu:before {
         color: white;
         left: 43%;
     }
     main {
-        width: 88.28125%;
-        min-height: 615px;
         margin-top: 110px;
         padding: 96px 60px 139px 60px;
     }
-    img {
-        width: 288px;
-        height: 154px;
-        margin-top: 50px;
-    }
-    .img9 {
+    .w1024 {
         display: block;
     }
+    .w480, .w768, .w1024 {
+        width: 31.93%;
+    }
     .caption {
-        font-size: 24px;
-    }
-    footer {
-        padding: 43px 188px 30px 140px;
-    }
-    .menu {
-        margin: 10px 0 0 40%;
+        font-size: 32px;
     }
 }
