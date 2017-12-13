@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/bkg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.wrapper {
+    min-width: 320px;
+    max-width: 1024px;
+    margin: auto;
+}
+
+/* ======================NAVIGATION============================ */
+
+nav {
+    position: relative;
+    text-transform: uppercase;
+}
+
+:root {
+    --w: 80px;
+}
+
+.logo {
+    position: absolute;
+    top: 23px;
+    left: 43%;
+    width: var(--w);
+    height: var(--w);
+    line-height: var(--w);
+    text-align: center;
+    font-family: "Dorsa", sans-serif;
+    font-size: 33px;
+    text-transform: uppercase;
+    color: #4A4A8D;
+    border-radius: calc(var(--w)/2);
+    background-color: white;
+}
+
+.navigation_up {
+    margin-top: 130px;
+}
+
+.navigation_up,
+.navigation_down {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 6.25rem;
+    padding-left: 7.5rem;
+    list-style: none;
+}
+
+.navigation_up>li>a,
+.navigation_down>li>a {
+    color: white;
+    font-family: "Pathway Gothic One", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    left: 45%;
+    z-index: 1;
+    background-color:  #f2f2f3;
+    list-style: none;
+    text-align: center;
+    padding: 8px;
+    line-height: 20px;
+    border-radius: 2px;
+}
+
+.agency,
+.news,
+.team {
+    font-size: 14px;
+    line-height: 22px;
+    color: #6b7488;
+    text-decoration: none;
+    font-family: "Pathway Gothic One", sans-serif;
+}
+
+.about:hover>.submenu {
+    display: block;
+}
+
+.submenu:before {
+    content: "\25B2";
+    color:  #f2f2f3;
+    top: -12px;
+    left: 40%;
+    height: 10px;
+    position: absolute;
+    font-size: 10px;
+}
+
+.navigation>li>a:hover {
+    color: #292955;
+}
+
+/* =====================MAIN============================ */
+
+main {
+    padding: 3.5rem 2.28125rem 4.6875rem;
+    background-color: white;
+}
+
+.image {
+    margin-top: 40px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.w768,
+.w1024 {
+    display: none;
+}
+
+.caption {
+    font-family:"Pathway Gothic One", sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #16163F;
+}
+
+/* ================FIXED_FIGURE==================== */
+
+figure {
+    display: inline-block;
+    position: fixed;
+    right: 8px;
+    bottom: 20px;
+    width: 26px;
+    height: 26px;
+    border-radius: 13px;
+    background-color: #5CA6FA;
+    text-align: center;
+}
+
+.figure {
+    display: inline-block;
+    text-decoration: none;
+    line-height: 21px;
+    width: 26px;
+    height: 26px;
+    border-radius: 15px;
+}
+
+.figure:before {
+    content: "\2227";
+    color: white;
+}
+
+/* ==================FOOTER===================== */
+
+footer {
+    background-color: #16163F;
+    padding: 1.375rem 0 2.375rem 0;
+}
+
+.footer {
+    font-size: 13px;
+    list-style: none;
+}
+
+footer>.container>.row>ul>li>a,
+.contact_us_link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 13px;
+}
+
+.contact_us {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.contact_us>p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: white;
+}
+
+/* ====================ICONS=========================== */
+
+.down {
+    margin-top: 10px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.menu li {
+    transform: scale(0.65);
+}
+
+.menu a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../img/sprite.png) 0 0 no-repeat;
+}
+
+.menu .facebook {
+    background-position: -40px 0;
+}
+
+.menu .google {
+    background-position: -80px 0;
+}
+
+.menu .instagram {
+    background-position: -120px 0;
+}
+
+.menu a:hover {
+    filter: grayscale(100%)
+}
+
+.copyright {
+    display: flex;
+    list-style: none;
+}
+
+.copyright li, .copyright a {
+  font-family: "Arial", sans-serif;
+  font-size: 9px;
+  line-height: 18px;
+  color: white;
+}
+
+.copyright a {
+  text-decoration: none;
+}
+
+.copyright a:hover {
+  color: #263555;
+  transition:0.5s;
+}
+
+.copyright li {
+  padding-right: 2px;
+  padding-left: 2px;
+  border-left: 1px solid #ffffff;
+}
+
+.copyright li:first-of-type {
+  border-left: none;
+}
+
+/* ======================MEDIA768======================== */
+
+@media screen and (min-width: 768px) {
+    :root {
+        --w: 100px;
+    }
+    .logo {
+        top:20px;
+        font-size: 44px;
+    }
+    .navigation_up {
+        margin-top: 140px;
+    }
+    .navigation_up,
+    .navigation_down {
+        padding-left: 13.75rem;
+        padding-right:13.75rem;
+    }
+    .navigation_up>li>a,
+    .navigation_down>li>a {
+        font-size: 24px;
+    }
+    .submenu {
+        width: 60px;
+        padding: 11px 8px;
+    }
+    .agency,
+    .news,
+    .team {
+        font-size: 17px;
+        line-height: 26px;
+    }
+    main {
+        margin-top: 20px;
+        padding: 85px 45px;
+    }
+    .w768 {
+        display: block;
+    }
+    footer {
+        padding-top: 1.25rem;
+        padding-bottom: 1.75rem;
+    }
+    .footer {
+        font-size: 16px;
+    }
+    .footer a {
+        font-size: 16px;
+    }
+    .contact_us {
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .contact_us>p {
+        font-size: 12px;
+    }
+    .menu li {
+        transform: scale(1);
+        margin-right: 0.75rem;
+    }
+    .copyright li, .copyright a {
+        font-size: 12px;
+    }
+}
+
+/* ======================MEDIA1024======================== */
+
+@media screen and (min-width: 992px) {
+    :root {
+        --w: 142px;
+    }
+    .logo {
+        top: 45px;
+        font-size: 60px;
+    }
+    .navigation_up,
+    .navigation_down {
+        margin-top: 100px;
+        padding: 0;
+    }
+    .navigation_up {
+        padding-right: 7.6rem;
+        padding-left: 3.3rem;
+    }
+
+    .navigation_down {
+        padding-right: 3.1rem;
+        padding-left: 7.6rem;
+    }
+
+    .navigation>li>a {
+        font-size: 28px;
+    }
+    .submenu {
+        left: 33%;
+        width:70px;
+        background-color: white;
+    }
+    .agency,
+    .news,
+    .team {
+        font-size: 20px;
+    }
+    .submenu:before {
+        color: white;
+        left: 43%;
+    }
+    main {
+        margin-top: 110px;
+        padding: 96px 60px 139px 60px;
+    }
+    .w1024 {
+        display: block;
+    }
+    .caption {
+        font-size: 32px;
+    }
+    footer {
+        padding: 2.6875rem 11.625rem 1.875rem 8.625rem;
+    }
+    .contact_us>p {
+        font-size: 12px;
+    }
+}
